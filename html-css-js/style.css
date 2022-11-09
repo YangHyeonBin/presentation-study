@@ -1,0 +1,68 @@
+/* 속성 선택자 */
+h1 {
+  color: dodgerblue;
+}
+
+/* 클래스 선택자 */
+.list-title {
+  position: relative;
+  cursor: pointer;
+}
+
+.list-items {
+  display: none;
+}
+
+.list-items.show {
+  display: inline-block;
+}
+
+.contents-list li {
+  margin-bottom: 1em;
+}
+
+/* 아이디 선택자 */
+#list-1 {
+  background-color: #d7bee2;
+  width: 275px;
+}
+
+#list-2 {
+  background-color: #a9c7d8;
+  width: 165px;
+}
+
+#list-3 {
+  background-color: #c0df9f;
+  width: 50px;
+}
+
+/* 가상 선택자 */
+.list-item::marker {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.list-title::after {
+  content: '';
+  height: 8px;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  opacity: 50%;
+}
+
+.title-1::after {
+  width: 430px;
+  background-color: #d7bee2;
+}
+
+.title-2::after {
+  width: 250px;
+  background-color: #a9c7d8;
+}
+
+.title-3::after {
+  width: 80px;
+  background-color: #c0df9f;
+}
